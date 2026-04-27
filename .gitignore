@@ -45,4 +45,5 @@ dist-ssr/
 
 # Project specific
 logs/
-data/
+# data/ (Removed to track src/data)
+

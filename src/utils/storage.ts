@@ -54,7 +54,7 @@ const savePesticideDataVersion = (): void => {
 
 const mergeDefaultPesticideFields = (pesticide: Pesticide): Pesticide => {
   const defaultPesticide = defaultPesticides.find(
-    (candidate) => candidate.id === pesticide.id,
+    (candidate: Pesticide) => candidate.id === pesticide.id,
   );
 
   if (!defaultPesticide || !pesticide.isDefault) {
@@ -80,9 +80,9 @@ const mergeDefaultPesticideFields = (pesticide: Pesticide): Pesticide => {
 
 const mergeDefaultPesticides = (pesticides: Pesticide[]): Pesticide[] => {
   const mergedPesticides = pesticides.map(mergeDefaultPesticideFields);
-  const currentIds = new Set(mergedPesticides.map((pesticide) => pesticide.id));
+  const currentIds = new Set(mergedPesticides.map((pesticide: Pesticide) => pesticide.id));
   const missingDefaults = defaultPesticides.filter(
-    (pesticide) => !currentIds.has(pesticide.id),
+    (pesticide: Pesticide) => !currentIds.has(pesticide.id),
   );
 
   return missingDefaults.length > 0
