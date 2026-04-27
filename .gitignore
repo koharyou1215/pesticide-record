@@ -31,11 +31,17 @@ ENV/
 env.bak/
 venv.bak/
 
-# Antigravity / IDE
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local
 
+# Antigravity / IDE
 .idea/
 .vscode/
 *.swp
+.antigravity/
 
 # Project specific
 logs/
