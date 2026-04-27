@@ -1,0 +1,17 @@
+{
+  "name": "農薬使用記録表",
+  "short_name": "農薬記録",
+  "description": "農薬の使用状況を記録・計算するためのアプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4caf50",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
